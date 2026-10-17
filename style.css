@@ -1,0 +1,152 @@
+ body {
+    font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+    margin: 0; padding: 0;
+    background: #f1f5f9; color: #0f172a;
+    display: flex;
+}
+
+/* 🏮 पेट्रोल पंप स्टाइल OYO पिलर लोगो (Fixed on Left Side) */
+.logo-pillar {
+    position: fixed; top: 0; left: 0;
+    width: 70px; height: 100vh;
+    background: linear-gradient(180deg, #dc2626, #991b1b);
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: flex-start;
+    box-shadow: 4px 0 15px rgba(0,0,0,0.3); z-index: 99; padding-top: 20px;
+}
+.pillar-logo-img {
+    width: 85%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 6px;
+}
+
+/* राइट साइड का पूरा कंटेंट रैपर */
+.main-content-wrapper {
+    margin-left: 70px;
+    width: calc(100% - 70px);
+    display: flex; flex-direction: column;
+}
+
+header {
+    background: linear-gradient(135deg, #1e3a8a, #0f172a);
+    color: white; padding: 25px 20px; text-align: center;
+    position: relative;
+}
+.header-top { display: flex; justify-content: flex-end; max-width: 1200px; margin: 0 auto; }
+
+.lang-btn {
+    background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3);
+    color: white; padding: 6px 14px; border-radius: 20px; cursor: pointer;
+    font-weight: 600; font-size: 13px;
+}
+
+.top-logo-box {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+.main-top-logo {
+    max-width: 120px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* ✍️ ओयो स्टाइलिश अक्षरों में */
+.logo-title {
+    margin: 5px 0 5px 0; font-size: 2.3rem; font-weight: 900;
+    color: #ffffff; letter-spacing: 2px;
+    text-shadow: 0 0 10px #3b82f6, 0 0 20px #1d4ed8;
+}
+.tagline { margin: 0 0 20px 0; font-size: 1rem; color: #93c5fd; font-weight: 500; }
+
+.filter-select {
+    padding: 12px 24px; font-size: 15px; border-radius: 30px;
+    border: 2px solid #3b82f6; font-weight: 600; outline: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15); width: 280px; text-align: center;
+    background: white; color: #1e3a8a;
+}
+
+/* 🛡️ सेफ, फ्री, ट्रस्ट फीचर्स स्ट्रिप */
+.trust-features-strip {
+    background: white; border-bottom: 1px solid #e2e8f0;
+    padding: 15px 20px; display: flex; flex-wrap: wrap;
+    justify-content: center; gap: 25px;
+}
+.feature-item {
+    font-size: 14px; font-weight: 600; color: #1e3a8a;
+    display: flex; align-items: center; gap: 8px;
+}
+
+/* 🏨 रियल रूम फोटोज़ ग्रिड लेआउट */
+.hotel-grid-container {
+    max-width: 1200px; margin: 30px auto; padding: 0 20px;
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px;
+    box-sizing: border-box;
+}
+.hotel-card {
+    background: white; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    overflow: hidden; border: 1px solid #e2e8f0; display: flex;
+    flex-direction: column; justify-content: space-between; transition: transform 0.2s;
+}
+.hotel-card:hover { transform: translateY(-5px); }
+
+.hotel-img-box {
+    height: 220px; width: 100%; position: relative; background: #e2e8f0;
+}
+.hotel-img-box img {
+    width: 100%; height: 100%; object-fit: cover; display: block;
+}
+.hotel-badge {
+    position: absolute; top: 12px; left: 12px; background: #dc2626;
+    color: white; font-size: 11px; padding: 4px 12px; font-weight: bold;
+    border-radius: 20px; text-transform: uppercase; z-index: 10;
+}
+
+.hotel-info { padding: 20px; flex-grow: 1; }
+.hotel-title { margin: 0 0 6px 0; font-size: 1.3rem; color: #0f172a; font-weight: 700; }
+.hotel-loc { font-size: 13px; color: #64748b; font-weight: 600; margin-bottom: 12px; }
+.hotel-specs { font-size: 13px; color: #475569; line-height: 1.5; margin-bottom: 15px; }
+.hotel-price { font-size: 1.6rem; color: #16a34a; font-weight: 700; margin-bottom: 15px; }
+
+.book-btn {
+    background: #dc2626; color: white; border: none; padding: 13px;
+    font-size: 15px; font-weight: bold; border-radius: 8px; width: 100%;
+    cursor: pointer;
+}
+.book-btn:hover { background: #b91c1c; }
+
+/* ℹ️ अबाउट और सोशल लिंक्स सेक्शन */
+.about-network-section {
+    background: #0f172a; color: white; max-width: 1200px;
+    margin: 40px auto 10px auto; padding: 35px 25px;
+    border-radius: 16px; text-align: center; box-sizing: border-box;
+}
+.about-network-section h2 { color: #38bdf8; margin-top: 0; font-size: 1.6rem; }
+.about-network-section p { color: #94a3b8; font-size: 14px; line-height: 1.6; max-width: 800px; margin: 0 auto 25px auto; }
+
+.social-links-box { display: flex; justify-content: center; gap: 20px; }
+.social-icon {
+    width: 95px; padding: 10px 0; border-radius: 20px; background: #1e293b;
+    display: flex; align-items: center; justify-content: center;
+    color: white; font-size: 13px; font-weight: bold; text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.social-icon.insta { background: #e1306c; }
+.social-icon.face { background: #1877f2; }
+.social-icon.you { background: #ff0000; }
+
+footer { background: #020617; color: #64748b; padding: 25px; text-align: center; font-size: 13px; }
+.dev-credits { color: #f59e0b; font-weight: bold; margin-top: 4px; }
+
+/* 🛎️ बुकिंग मॉडल */
+.modal { display: none; position: fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); justify-content:center; align-items:center; z-index:9999; }
+.modal-content { background: white; padding: 30px; border-radius: 12px; width: 90%; max-width: 400px; text-align: center; color: #0f172a; }
+.modal-content input { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #cbd5e1; border-radius: 6px; box-sizing: border-box; }
+.confirm-btn { background: #22c55e; color: white; border: none; padding: 12px; font-weight: bold; border-radius: 6px; width:100%; cursor:pointer; }
+.close-btn { background: #cbd5e1; color: #334155; border: none; padding: 8px; border-radius: 6px; width:100%; margin-top: 10px; cursor:pointer; }
+
+@media (max-width: 768px) {
+    .logo-pillar { display: none; }
+    .main-content-wrapper { margin-left: 0; width: 100%; }
+}

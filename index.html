@@ -1,0 +1,86 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OYO Premium Network | Direct Hotel Booking Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 🏮 साइड का पेट्रोल पंप स्टाइल पिलर लोगो -->
+    <div class="logo-pillar">
+        <img src="https://iili.io" alt="OYO" class="pillar-logo-img">
+    </div>
+
+    <div class="main-content-wrapper">
+        <header>
+            <div class="header-top">
+                <button id="langToggleBtn" class="lang-btn">Change Language (HI)</button>
+            </div>
+            <div class="brand-container">
+                <!-- 🏢 सबसे ऊपर मुख्य लोगो इमेज -->
+                <div class="top-logo-box">
+                    <img src="https://iili.io" alt="OYO Logo" class="main-top-logo">
+                </div>
+                <h1 class="logo-title" id="mainTitle">✨ OYO STYLISH NETWORK ✨</h1>
+                <p class="tagline" id="mainTagline">Premium Property Grid & Direct WhatsApp Booking Management</p>
+            </div>
+            
+            <div class="search-filter-section">
+                <select id="cityFilter" class="filter-select">
+                    <option value="all" id="optAll">🔍 All Cities (सभी शहर देखें)</option>
+                    <option value="Patna">Patna</option>
+                    <option value="Bhagalpur">Bhagalpur</option>
+                    <option value="Ranchi">Ranchi</option>
+                </select>
+            </div>
+        </header>
+
+        <!-- 🛡️ ट्रस्ट फीचर्स स्ट्रिप -->
+        <section class="trust-features-strip">
+            <div class="feature-item"><span id="trust1">🔒 100% Safe Stays</span></div>
+            <div class="feature-item"><span id="trust2">💰 Zero Booking Fees</span></div>
+            <div class="feature-item"><span id="trust3">📅 Free Cancellation</span></div>
+            <div class="feature-item"><span id="trust4">👥 Couple Friendly</span></div>
+        </section>
+
+        <!-- होटल्स ग्रिड -->
+        <main class="hotel-grid-container" id="hotelGrid"></main>
+
+        <!-- ℹ️ नीचे अबाउट सेक्शन और सोशल मीडिया लिंक्स -->
+        <section class="about-network-section">
+            <h2 id="aboutTitle">About Premium Stays Network</h2>
+            <p id="aboutDesc">We are India's fastest-growing autonomous hotel tech network. By eliminating aggregators, we connect premium corporate clients and travelers directly with elite property owners via WhatsApp automation. Save heavy commissions and experience transparent hospitality.</p>
+            
+            <div class="social-links-box">
+                <a href="https://instagram.com" target="_blank" class="social-icon insta">Instagram</a>
+                <a href="https://facebook.com" target="_blank" class="social-icon face">Facebook</a>
+                <a href="https://youtube.com" target="_blank" class="social-icon you">YouTube</a>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Premium Stays Network Inc. All Rights Reserved.</p>
+            <p class="dev-credits">⚡ Core Engine & Architecture Maintained by Mayank (Enterprise Web Developer)</p>
+        </footer>
+    </div>
+
+    <!-- 🛎️ बुकिंग कन्फर्मेशन मॉडल -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <h2 id="modalHead">🛎️ Confirm Direct Booking</h2>
+            <p id="modalHotelDetails"></p>
+            <form id="modalForm">
+                <input type="text" id="custName" placeholder="Enter Full Name" required>
+                <input type="tel" id="custPhone" placeholder="Enter WhatsApp Number" required>
+                <input type="date" id="checkInDate" required>
+                <button type="submit" class="confirm-btn" id="modalSubmitBtn">Complete Booking via WhatsApp</button>
+                <button type="button" class="close-btn" onclick="closeBookingModal()" id="modalCloseBtn">Cancel</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
