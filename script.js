@@ -1,4 +1,4 @@
- // 🏨 मयंक भाई का 100% फुल और सटीक डायरेक्ट इमेज लिंक्स वाला डेटाबेस
+ // 🏨 मयंक भाई का 100% सुपर-फास्ट फिक्स इमेजेस वाला डेटाबेस
 const datasetHotels = [
     { 
         id: 1, 
@@ -6,7 +6,7 @@ const datasetHotels = [
         city: "Patna", 
         price: 1499, 
         specs: "AC Luxury King Room | Premium Smart TV | Couple Friendly Space | High-Speed WiFi Included", 
-        img: "https://iili.io", 
+        img: "https://freeimage.host/i/njly2rF", // 👈 आपका पहला कमरा 100% फिक्स लिंक
         badge: "best seller" 
     },
     { 
@@ -15,7 +15,7 @@ const datasetHotels = [
         city: "Patna", 
         price: 1899, 
         specs: "Premium Modern Bathroom Layout | High Quality Geyser & Showers | Fully Sanitized & Secure Setup", 
-        img: "https://iili.io", 
+        img: "roomhttps://freeimage.host/i/njlpZdu", // 👈 आपका बाथरूम 100% फिक्स लिंक
         badge: "luxury bath" 
     },
     { 
@@ -82,7 +82,7 @@ const langData = {
         trust3: "📅 फ्री कैंसिलेशन",
         trust4: "👥 कपल फ्रेंडली",
         aboutTitle: "Premium Stays नेटवर्क के बारे में",
-        aboutDesc: "हम भारत के सबसे तेजी से बढ़ते स्वतंत्र hotel tech नेटवर्क हैं। बिचौलियों को हटाकर, हम यात्रियों को व्हाट्सएप ऑटोमेशन के जरिए सीधे hotel मालिकों से जोड़ते हैं। भारी कमीशन बचाएं और पारदर्शी आतिथ्य का अनुभव करें।",
+        aboutDesc: "हम भारत के सबसे तेजी से बढ़ते स्वतंत्र hotel tech नेटवर्क हैं। बिचौलियों को हटाकर, हम यात्रियों को व्हाट्सएप ऑटोमेशन के जरिए सीधे hotel मालिकों से जोड़ते हैं। भारी कमीशन बचाएं and पारदर्शी आतिथ्य का अनुभव करें।",
         btnText: "सीधे व्हाट्सएप पर बुक करें",
         modalHead: "🛎️ डायरेक्ट बुकिंग की पुष्टि करें",
         modalSubmit: "व्हाट्सएप के जरिए बुकिंग पूरी करें",
